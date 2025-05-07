@@ -16,7 +16,14 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/movies" element={<Movies />} />
           <Route path="/movies/:id" element={<MovieDetails />} />
-          <Route path="*" element={<h1>404 Not Found</h1>} />
+          <Route
+            path="*"
+            element={
+              <h1>
+                <strong>404 Not Found</strong>
+              </h1>
+            }
+          />
         </Routes>
       </main>
       <Footer />
